@@ -33,10 +33,6 @@ public class TaskX {
         }
         int lessCoin = (seeker - (coin % seeker));
 
-        if (lessCoin == seeker) {
-            lessCoin = 0;
-        }
-
-        return lessCoin;
+        return lessCoin == seeker ? 0 : lessCoin;
     }
 }

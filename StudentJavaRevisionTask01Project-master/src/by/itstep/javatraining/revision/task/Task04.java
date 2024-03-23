@@ -26,12 +26,10 @@ package by.itstep.javatraining.revision.task;
 
 public class Task04 {
     public static int start(int number) {
-        int digit = (number / 100) % 10;
-
-        if (digit < 0) {
-            digit = digit * -1;
+        if (number < 0) {
+            number = number * -1;
         }
 
-        return digit;
+        return (number / 100) % 10;
     }
 }

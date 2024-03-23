@@ -32,14 +32,6 @@ public class Task05 {
             return 0;
         }
 
-        int nextEvenNum = number;
-
-        if (number % 2 == 0) {
-            nextEvenNum += NEXT_EVEN_NUMBER;
-        } else {
-            nextEvenNum++;
-        }
-
-        return nextEvenNum;
+        return number % 2 == 0 ? number + NEXT_EVEN_NUMBER : ++number;
     }
 }
