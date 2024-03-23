@@ -30,7 +30,6 @@ public class Task03 {
             number = number * -1;
         }
 
-
         return (number / 10) % 10;
     }
 }
